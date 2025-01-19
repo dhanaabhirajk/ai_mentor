@@ -1,0 +1,102 @@
+Generative AI
+Large Language Model (LLM)
+
+Recap
+----
+
+- Trained on Human Language
+- Predicts the next token (half word)
+- Parameters 1B, 32B
+
+How model is running?
+-----
+Take VLC player or the video players. It is an application to play videos
+Videos are files in different format like .mp4, .mov, .mkv
+We can play the video in VLC player by connecting to a screen with LCD, LED, OLED, multiple small LED panels.
+Different screens support different clarity.
+In the same way models are also files. Models can be stored in different file formats like gguf, safe tensors, bin.
+TO run the model, we need an application, that were the ollama, llama.cpp, pytorch. Each application has its own advantage.
+We can run the model in the application with infrastrucutre CPU, GPU, TPU, NPU similar to LED screens.
+We can can use the ollama application to inference the model.
+To reduce the size of the video file, we reduce the resolution.
+In the same way, we reduce the precision values in the model to reduce the model size in inference.
+
+
+New ML Beginner
+------
+Use Deep learning network framework like pytorch
+Program your network architecture
+Prepate the human language input - output pairs (Hi - Hello. How can I help you?) (Based on many use cases)
+Train the neural network
+Predict the next token (1 to 4 characters)
+
+
+High level Overview of Generative AI
+------
+
+Training
+Prompting RAG (Retrieval Augmented Generation)
+Finetuning
+Agent(Environment, Actions) [Logical Agent (my open source project) - Continuous learning]
+
+Language Models
+--------
+Input to LLMs
+Text only
+Multimodal (Text, image, video, audio) - openai, gemini, claude, llama
+Image focused prompting to capture more image details with prompting (generalized for all and an alternative to Image classification models (using CNN)) - florence
+
+What can we do with Generative AI?
+---------
+
+Healthcare Diagnostics Assistance
+
+Problem: Diagnosing diseases from medical imaging (e.g., X-rays, MRIs) requires significant expertise and time, often resulting in delays in treatment.
+
+Solution using LLM: Utilize generative AI to analyze unstructured medical reports and imaging data, converting them into structured summaries with probable diagnoses and treatment recommendations. This accelerates decision-making and improves diagnostic accuracy.
+
+----------
+
+Legal Document Review
+
+Problem: Reviewing lengthy legal documents in for compliance, errors, or critical clauses is time-consuming and prone to human oversight. (courts, public sectors, giving tenders more and more)
+
+Solution using LLM: Apply generative AI to extract key terms, flag inconsistencies, and summarize large volumes of legal text accurately. This reduces the time required for contract reviews and ensures compliance.
+
+----------
+
+Supply Chain Optimization
+
+Problem: Predicting disruptions in supply chains due to external factors (e.g., weather, geopolitical issues) is challenging.
+
+Solution using LLM: Use generative AI to process unstructured data from news, weather reports, and logistics updates, converting it into actionable insights for better supply chain forecasting.
+
+-----------
+
+Employee Onboarding Automation
+
+Problem: Onboarding new employees involves repetitive tasks and document processing, which can slow down productivity.
+
+Solution using LLM: Use generative AI to automate onboarding documentation, answer common queries, and provide personalized onboarding plans for new hires.
+
+-----------
+
+Customer Support Automation
+
+Problem: Handling large volumes of customer queries in real-time requires significant manpower, leading to delayed responses and inconsistent support quality. (specific to government policies, schemes, process, industry product support)
+
+Solution using LLM: Deploy generative AI chatbots capable of understanding context, resolving customer issues, and escalating complex cases efficiently. These chatbots learn from past interactions, improving their responses over time.
+
+
+--------------
+
+Product Market Sentiment Analysis
+
+Problem: Understanding market sentiment for specific products from reviews, competitor analysis, and social media is challenging due to the vast amount of unstructured text data.
+
+Solution using LLM: Utilize generative AI to process customer reviews, competitor data, and social media discussions, converting them into actionable insights that help identify product strengths, weaknesses, and emerging market trends.
+
+
+...more and more...
+
+

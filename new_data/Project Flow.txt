@@ -1,0 +1,46 @@
+Explain Generative AI project End to End lifecycle for Architect
+
+Recap and Hands-On Practice
+
+Project Flow ( Generative AI Mentor)
+
+- Streamlit UI (https://blog.streamlit.io/build-a-chatbot-with-custom-data-sources-powered-by-llamaindex/#1-configure-app-secrets) or
+- Chainlit UI (https://docs.chainlit.io/integrations/llama-index)
+- Use last meeting notes as data source
+- Indexing with those data source (Vector Database LanceDB or Faiss)
+
+1. Ask two questions and show the answers using the last meeting notes.
+2. Ask a new question that first replies with hallucination.
+3. Modify prompt to strictly use only sources, to avoid hallucination.
+4. To evaluate these responses, We need to use an evaluation system with a prepared dataset with questions and expected answers.
+5. Add this current meeting notes also as a data source and re index the vector store.
+6. Ask questions on current notes.
+
+Let's move this prototype to Production Deployment
+- Which LLM to use? See leaderboard. There are different benchmarks (MATH, MMLU, Reasoning, SWE-Bench).  Let's take the popular one, openai. It only charges based on the input and output tokens. Can we really depend on openai only? What if they are down? This is not suitable for productions. That's where we need dedicated services running for it which charges like normal cloud billing based on hours. That's where Azure OpenAI comes in for openai alternatives. There are many LLM Inference providers, try to ensure you have a reservation for it. Read about thier data privacy before choosing any LLM provider as well. 
+- If it's an open source model, there are many providers as well.
+- We can select the model that suits our case based on budget. There might be a use case needed with a small model that performs well with finetuning.
+- Based on our use case
+- Data Sources
+- Do we need to develop from scratch? no. that's where the LLM frameworks comes in like langchain, llamaindex, autogen
+- Tracing and observability that shows what my end application really is. Langsmith, langtrace
+- Guardrails - guardrails-ai, nemo guardrails
+- How will we improve, let's collect feedback to improve prompts or do fine tuning if really needed.
+- Evaluation - ragas, trulens
+- Get user feedback like performance and values added.
+
+
+What to do next	
+- Read Research papers, blog posts, and tutorials on Generative AI.
+- Tools, frameworks and platforms documentation
+- see about LLM provider https://azure.microsoft.com/en-us/pricing/details/cognitive-services/openai-service/
+- Learn more about the sub concepts that are really used to solve the problem https://www.llamaindex.ai/
+- https://www.langchain.com/
+- See about tracing here https://www.langchain.com/langsmith
+- How public evaluation goes https://www.swebench.com/
+- See more on agent, https://microsoft.github.io/autogen/stable/
+- Learn about vector store - https://milvus.io/
+- Guardrails - https://www.guardrailsai.com/
+- Evaluation - https://www.trulens.org/
+- Read about https://ollama.com/
+
